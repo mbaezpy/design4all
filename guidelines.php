@@ -31,14 +31,14 @@ function load_csv(){
                 $pub = array(
                     "id" => $row[0],
                     "count" => $row[1],
-                    "ability-1" => $row[2],
-                    "ability-2" => $row[3],
+                    "ability_1" => $row[2],
+                    "ability_2" => $row[3],
                     "severity" => $row[4],
-                    "design-1" => $row[5],
-                    "design-2" => $row[6],
+                    "design_1" => $row[5],
+                    "design_2" => $row[6],
                     "guideline" => $row[7],
                     "ref"       => $row[8],
-                    "ref-title" => $row[9],
+                    "ref_title" => $row[9],
                     "device"    => $row[10]                    
                 );
 

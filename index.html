@@ -71,12 +71,18 @@
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="guidelines">
         
-        <ul class="nav nav-pills options">
-          <li role="presentation" class="navbar-right"><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Paper </a></li>
-          <li role="presentation" class="navbar-right"><a href="#"><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Design category</a></li>           
-          <li role="presentation" class="navbar-right active"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> None</a></li>
-          <li role="presentation" class="navbar-right"><span class="pill-title">Group by</span></li>
+        <ul class="nav nav-pills options navbar-right">
+          <li role="presentation"><span class="pill-title">Group by</span></li>
+          <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> None</a></li>
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Design category</a></li>           
+          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Paper </a></li>
         </ul>
+        
+        <div class="summary text-uppercase">
+          <span id="r-nguide">10</span> guidelines,
+          <span id="r-npapers">10</span> papers,
+          <span id="r-ncategories">10</span> categories
+        </div>
         
         <ul class="guidelines">
 
@@ -91,7 +97,23 @@
 
   <script id="guide-tmpl" type="text/template">
     <li>
-      {guideline}
+      <p class="lead">{guideline}</p>
+      <p>{ref_title}</p>
+      <div>
+        <span class="tag">
+          <span class="glyphicon glyphicon-user"></span>
+          <span>{ability_1}</span> 
+          <span class="glyphicon glyphicon-chevron-right"></span>        
+          <span>{ability_2}</span>
+        </span>
+        <span class="tag-sep"></span>
+        <span class="tag">        
+          <span class="glyphicon glyphicon-text-background"></span>
+          <span>{design_1}</span> 
+          <span class="glyphicon glyphicon-chevron-right"></span>        
+          <span>{design_2}</span>
+        </span>
+      </div>
     </li>    
   </script>
   <script src="app.js"></script>

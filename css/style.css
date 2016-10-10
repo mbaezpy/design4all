@@ -22,3 +22,43 @@
   padding: 5px 15px;
   display: block;
 }
+
+/* tag */
+.tag {
+  background: #efefef;
+  padding: .2em .6em .3em;
+  color: #7F8C8D;
+  font-size: .9em;
+}
+
+.tag-sep{
+  display: inline-block;
+  width: 1px;
+  background: #efefef;
+  height: 100%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+
+/*guidelines*/
+.guidelines {
+  margin-top: 20px;
+}
+.guidelines .lead {
+  margin-bottom: 10px;
+}
+.guidelines > li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+    
+}
+.summary {
+  font-size: 1.2em;
+  color: #7F8C8D;
+  padding: 12px 10px;
+}
+.summary > span {
+  color: black;
+}
