@@ -1,0 +1,24 @@
+.logo {
+  height: 25px;
+  margin-top: -5px;
+}
+.tab-title{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+/* options */
+.options {
+  margin-top: 10px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: #efefef;
+  color: #4b4b4b;
+}
+.nav-pills>li>a{
+  padding: 5px 15px;
+}
+.nav-pills>li>.pill-title{
+  padding: 5px 15px;
+  display: block;
+}
