@@ -42,18 +42,18 @@
       <div class="filter-simple">
         <h2 class="form-inline">  
           with 
-          <select class="form-control input-lg"> 
-            <option>any</option> 
-            <option>mild</option> 
-            <option>severe</option>
+          <select id="filter-severity" class="form-control input-lg"> 
+            <option value="">any</option> 
+            <option value="mild">mild</option> 
+            <option value="severe">severe</option>
           </select> severity 
             on   
-          <select class="form-control input-lg"> 
-            <option>any</option> 
-            <option>perceptual</option> 
-            <option>cognitive</option> 
-            <option>psychomotor</option> 
-            <option>physical</option> 
+          <select id="filter-ability_1" class="form-control input-lg"> 
+            <option value="">any</option> 
+            <option value="perceptual">perceptual</option> 
+            <option value="cognitive">cognitive</option> 
+            <option value="psychomotor">psychomotor</option> 
+            <option value="physical">physical</option> 
           </select> ability
         </h2>
       </div>
@@ -79,9 +79,7 @@
         </ul>
         
         <div class="summary text-uppercase">
-          <span id="r-nguide">10</span> guidelines,
-          <span id="r-npapers">10</span> papers,
-          <span id="r-ncategories">10</span> categories
+
         </div>
         
         <ul class="guidelines">
@@ -95,6 +93,12 @@
     </div>
   </div>
 
+  <script id="summary-tmpl" type="text/template">
+    <span>{nguide}</span> guidelines,
+    <span>{npapers}</span> papers,
+    <span>{ncategories}</span> categories
+  </script>
+  
   <script id="guide-tmpl" type="text/template">
     <li>
       <p class="lead">{guideline}</p>
