@@ -27,9 +27,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="navbar-link">Submit your guidelines</a></li>
-            <li><a href="#" class="navbar-link">About the taxonomy</a></li>
-            <li><a href="#" class="navbar-link">Contact us</a></li>
+            <li><a href="about.html#dataset" class="navbar-link">Dataset</a></li>
+            <li><a href="about.html#publications" class="navbar-link">Publications</a></li>
+            <li><a href="about.html" class="navbar-link">About</a></li>
           </ul>
         </div>
       </div>
@@ -87,6 +87,13 @@
         </ul>
       </div>
       <div role="tabpanel" class="tab-pane" id="papers">
+        <div class="paperListSummary text-uppercase">
+
+        </div>
+        
+        <ul style="list-style: none;" class="paperList">
+
+        </ul>
         
       </div>
    
@@ -97,6 +104,10 @@
     <span>{nguide}</span> guidelines,
     <span>{npapers}</span> papers,
     <span>{ncategories}</span> categories
+  </script>
+
+  <script id="summary-tmpl-ppr" type="text/template">
+    <span>{npapers}</span> papers
   </script>
   
   <script id="guide-tmpl" type="text/template">
@@ -118,6 +129,12 @@
           <span>{design_2}</span>
         </span>
       </div>
+    </li>    
+  </script>
+
+  <script id="paper-tmpl" type="text/template">
+    <li>
+      <p class="lead">[{ref}] {ref_title}</p>
     </li>    
   </script>
   <script src="app.js"></script>

@@ -1,0 +1,27 @@
+{
+  "name": "design4all",
+  "version": "1.0.0",
+  "description": "Portal for navigating design guidelines",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbaezpy/design4all.git"
+  },
+  "engines": {
+    "node": "4.6.1"
+  },
+  "author": "Marcos Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbaezpy/design4all/issues"
+  },
+  "homepage": "https://github.com/mbaezpy/design4all#readme",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "serve-static": "^1.13.2"
+  }
+}
