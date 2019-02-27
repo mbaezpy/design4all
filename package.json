@@ -12,7 +12,7 @@
     "url": "git+https://github.com/mbaezpy/design4all.git"
   },
   "engines": {
-    "node": "4.6.1"
+    "node": "4.7.0"
   },
   "author": "Marcos Baez",
   "license": "ISC",
